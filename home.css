@@ -242,7 +242,10 @@ a:hover .search- {
     justify-content: center;
     gap: 15px;
 }
-
+.story_container{
+    display: flex;
+    gap: 20px;
+}
 .story_menu {
     display: flex;
     justify-content: center;
@@ -537,9 +540,15 @@ a:hover .search- {
     gap: 30px; 
     flex-wrap: wrap;
 }
+.today_time{
+    color: #b7b6b6; 
+    margin-left: 300px; 
+    display: flex;
+}
 @media only screen and (max-width: 1100px){
     body{
         overflow-x: hidden;
+        background: none;
     }
     .nav_bar ul{
         display: none;
@@ -648,7 +657,13 @@ a:hover .search- {
         margin-top: 30px;
     }
     .story_content{
-        width: 22vw;
+        width: 18vw;
+    }
+    .story_container{
+        gap: 2vw;
+    }
+    .story123456{
+        display: none;
     }
     .story_content:hover .story_img {
         transform: none;
@@ -681,6 +696,7 @@ a:hover .search- {
         margin-left: 20px;
         border: none;
         width: 100vw;
+        margin-right: 100px;
     }
     .button_more{
         width: 96vw;
@@ -786,6 +802,14 @@ a:hover .search- {
         overflow: hidden;
     }
 }
+@media only screen and (max-width: 960px){
+    .story_content{
+        width: 22.5vw;
+    }
+    .story12345{
+        display: none;
+    }
+}
 @media only screen and (max-width: 800px)
 {
     .img_1{
@@ -799,9 +823,11 @@ a:hover .search- {
     .today_cont_text p:nth-of-type(2){
         display: none;
     }
-    .today_cont_text div{
+    .today_time{
         position: relative;
         left: -300px;
+        margin-right: 0px;
+        line-clamp: 1;
     }
     .today_cont_text{
         margin-right: 40px;
@@ -809,11 +835,15 @@ a:hover .search- {
     .today_cont_title{
         font-weight: 100;
         font-size: 17px;
+        width: 60vw;
     }
 }
 @media only screen and (max-width: 700px){
     .story_content{
         width: 30vw;
+    }
+    .story1234{
+        display: none;
     }
     .life700{
         display: none;
@@ -823,6 +853,9 @@ a:hover .search- {
     }
     .life_cont_text{
         width: 46vw;
+    }
+    .today_time{
+        width: 200px;
     }
 }
 @media only screen and (max-width: 560px){
@@ -853,5 +886,10 @@ a:hover .search- {
     }
     .gray_menu{
         width: 100vw;
+    }
+    .today_cont_title{
+        font-weight: 100;
+        font-size: 15px;
+        width: 50vw;
     }
 }
